@@ -49,7 +49,24 @@ app.get("/login",(req,res)=>{
         +"</ol>"
     );
 });
-
+app.get("/submit", (req, res) => {
+    res.send(
+        "<h1>Vijay sales</h1>"
+        + "</hr>"
+        + "</h3>tank you visit </h3>"
+        + "<br>"
+        + "name <input>"
+        + "<br>"
+        + "password <input>"
+        + "<br>"
+        + "<ol>"
+        + "<li>laptops</li>"
+        + "<li>computers</li>"
+        + "<li>watches</li>"
+        + "<li>come again</li>"
+        + "</ol>"
+    );
+});
 
 var server=app.listen(7000);
 console.log("simple running at port no 7000")
